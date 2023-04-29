@@ -305,8 +305,16 @@ One of the boxes has been selected at random and a single marble is drawn from i
 \textbf{Answer:}\tab[0.4cm] \( 1)\frac{1}{15} \) \tab \( 2)\frac{2}{5}\) \tab \( 3)\frac{8}{15}\) 
 
 \solution
-
-Events are defined in tables folder.
+\begin{table}[htb]
+\begin{tabular}{|l|l|}\hline
+Events &Definition	\\\hline
+$E$    &drawn marble is red \\\hline
+$E_1$  &selected box is A\\\hline
+$E_2$  &selected box is B\\\hline
+$E_3$  &selected box is C\\\hline
+$E_4$  &selected box is D\\\hline
+\end{tabular}
+\end{table}
 
 Probability of chosen box being A given that drawn marble is red is given by: \(\pr{E_1\vert E}\) 
 
@@ -323,27 +331,24 @@ Here,
 &\pr{E_1}=\pr{E_2}=\pr{E_3}=\pr{E_4}=\frac{1}{4}
 \end{align}
 
-Now by Bayes' theorem,\\
+Now by Bayes' theorem,
 
-\scriptsize
 \begin{align*}
-\pr{E_1|E} &=\frac{\pr{E|E_1}.\pr{E_1}}{\pr{E|E_1}.\pr{E_1}+\pr{E|E_2}.\pr{E_2}+\pr{E|E_3}.\pr{E_3}+\pr{E|E_4}.\pr{E_4}}\\
+\pr{E_1|E} &=\frac{\pr{E|E_1}.\pr{E_1}}{\sum_{i=1}^{i=4}(\pr{E|E_i}.\pr{E_i})}\\
         &= \frac{\frac{1}{10}.\frac{1}{4}}{\frac{1}{10}.\frac{1}{4}+\frac{6}{10}.\frac{1}{4}+\frac{8}{10}.\frac{1}{4}+\frac{0}{10}.\frac{1}{4}}\\
         &= \frac{\frac{1}{40}}{\frac{15}{40}}\\
         &= \frac{1}{15}\\
 \end{align*}
 
-
-\scriptsize
 \begin{align*}
-\pr{E_2|E} &=\frac{\pr{E|E_2}.\pr{E_2}}{\pr{E|E_1}.\pr{E_1}+\pr{E|E_2}.\pr{E_2}+\pr{E|E_3}.\pr{E_3}+\pr{E|E_4}.\pr{E_4}}\\
+\pr{E_2|E} &=\frac{\pr{E|E_2}.\pr{E_2}}{\sum_{i=1}^{i=4}(\pr{E|E_i}.\pr{E_i})}\\
         &= \frac{\frac{6}{10}.\frac{1}{4}}{\frac{1}{10}.\frac{1}{4}+\frac{6}{10}.\frac{1}{4}+\frac{8}{10}.\frac{1}{4}+\frac{0}{10}.\frac{1}{4}}\\
         &= \frac{\frac{6}{40}}{\frac{15}{40}}\\
         &=\frac{2}{5}\\
 \end{align*}
-\scriptsize
+
 \begin{align*}
-\pr{E_3|E} &=\frac{\pr{E|E_3}.\pr{E_3}}{\pr{E|E_1}.\pr{E_1}+\pr{E|E_2}.\pr{E_2}+\pr{E|E_3}.\pr{E_3}+\pr{E|E_4}.\pr{E_4}}\\
+\pr{E_3|E} &=\frac{\pr{E|E_3}.\pr{E_3}}{\sum_{i=1}^{i=4}(\pr{E|E_i}.\pr{E_i})}\\
         &= \frac{\frac{8}{10}.\frac{1}{4}}{\frac{1}{10}.\frac{1}{4}+\frac{6}{10}.\frac{1}{4}+\frac{8}{10}.\frac{1}{4}+\frac{0}{10}.\frac{1}{4}}\\
         &= \frac{\frac{8}{40}}{\frac{15}{40}}\\
         &= \frac{8}{15}
