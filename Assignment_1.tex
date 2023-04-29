@@ -19,6 +19,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
+\usepackage{multirow}
 %\usepackage{tabto}
 %
 %\usepackage{setspace}
@@ -299,57 +300,62 @@
 
 %\IEEEpeerreviewmaketitle
 
-\noindent\textbf{12.13.6.12 Question:} Suppose we have four boxes A,B,C and D containing coloured marbles as given below: \\
+\textbf{12.13.6.12 Question:} Suppose we have four boxes A,B,C and D containing coloured marbles as given below: 
 \begin{table}[htb]
-\begin{tabular}{|l|lll|}
-\hline
-Box & \multicolumn{3}{l|}{Marble colour}                            \\ \hline
-    & \multicolumn{1}{l|}{Red} & \multicolumn{1}{l|}{White} & Black \\ \hline
-A   & \multicolumn{1}{l|}{1}   & \multicolumn{1}{l|}{6}     & 3     \\ \hline
-B   & \multicolumn{1}{l|}{6}   & \multicolumn{1}{l|}{2}     & 2     \\ \hline
-C   & \multicolumn{1}{l|}{8}   & \multicolumn{1}{l|}{1}     & 1     \\ \hline
-D   & \multicolumn{1}{l|}{0}   & \multicolumn{1}{l|}{6}     & 4     \\ \hline
+\vspace*{-\baselineskip}
+\begin{tabular}{|l|l|l|l|}\hline
+\multicolumn{1}{|l|}{Box} & \multicolumn{3}{|l|}{Marble colour} \\\hline
+        &Red    &White  &Black\\\hline
+A       &1      &6      &3\\\hline
+B       &6      &2      &2\\\hline
+C       &8      &1      &1\\\hline
+D       &0      &6      &4\\\hline
 \end{tabular}
 \end{table}
-\\
+
 One of the boxes has been selected at random and a single marble is drawn from it.$\,$If the marble is read,$\,$what is the probability that it was drawn from \\1) Box A ?\\2) Box B ?\\3) Box C ?\\\\
-\textbf{Answer:}\tab[0.4cm] $1) \frac{1}{15}$\tab$2)\frac{2}{5}$
-\tab$3)\frac{8}{15}$\\\\
+\textbf{Answer:}\tab[0.4cm] \( 1)\frac{1}{15} \) \tab \( 2)\frac{2}{5}\) \tab \( 3)\frac{8}{15}\) 
 
-\noindent\textbf{Solution:}
+\solution
 
-\noindent Let $E$ be the event that the drawn marble is red.\\
-Let $E_1$ be the event that the selected box is A.\\
-Let $E_2$ be the event that the selected box is B.\\
-Let $E_3$ be the event that the selected box is C.\\
-Let $E_4$ be the event that the selected box is D.\\
+Let \(E\) be the event that the drawn marble is red.
 
-\noindent Probability of chosen box being A given that drawn marble is red is given by: P($E_1\vert E$)\\
-Probability of chosen box being B given that drawn marble is red is given by: P($E_2\vert E$)\\
-Probability of chosen box being C given that drawn marble is red is given by: P($E_3\vert E$)\\
+Let \(E_1\) be the event that the selected box is A.
 
-\noindent Here,\\
-$P(E\vert E_1)=\frac{1}{10}$\tab
-$P(E\vert E_2)=\frac{6}{10}$\\\\
-$P(E\vert E_3)=\frac{8}{10}$\tab
-$P(E\vert E_4)=\frac{0}{10}$\\\\
-\noindent $P(E_1)=P(E_2)=P(E_3)=P(E_4)=\frac{1}{4}$\\
+Let \(E_2\) be the event that the selected box is B.
 
+Let \(E_3\) be the event that the selected box is C.
 
-\noindent Now by Bayes' theorem,\\\\
-\noindent$P(E_1|E) =\frac{P(E|E_1).P(E_1)}{P(E|E_1).P(E_1)+P(E|E_2).P(E_2)+P(E|E_3).P(E_3)+P(E|E_4).P(E_4)}\\\\
+Let \(E_4\) be the event that the selected box is D.
+
+Probability of chosen box being A given that drawn marble is red is given by: \(\pr{E_1\vert E}\) 
+
+Probability of chosen box being B given that drawn marble is red is given by: \(\pr{E_2\vert E}\) 
+
+Probability of chosen box being C given that drawn marble is red is given by: \(\pr{E_3\vert E}\)
+
+Here,
+\begin{align}
+&\pr{E\vert E_1}=\frac{1}{10}\\
+&\pr{E\vert E_2}=\frac{6}{10}\\
+&\pr{E\vert E_3}=\frac{8}{10}\\
+&\pr{E\vert E_4}=\frac{0}{10}\\
+&\pr{E_1}=\pr{E_2}=\pr{E_3}=\pr{E_4}=\frac{1}{4}
+\end{align}
+
+Now by Bayes' theorem,\\
+\(\pr{E_1|E} =\frac{\pr{E|E_1}.\pr{E_1}}{\pr{E|E_1}.\pr{E_1}+\pr{E|E_2}.\pr{E_2}+\pr{E|E_3}.\pr{E_3}+\pr{E|E_4}.\pr{E_4}}\\\\
         \tab\tab[0.4cm]= \frac{\frac{1}{10}.\frac{1}{4}}{\frac{1}{10}.\frac{1}{4}+\frac{6}{10}.\frac{1}{4}+\frac{8}{10}.\frac{1}{4}+\frac{0}{10}.\frac{1}{4}}\\\\
         \tab\tab[0.4cm]= \frac{\frac{1}{40}}{\frac{15}{40}}\\\\
-        \tab\tab[0.4cm]= \frac{1}{15}$\\\\\\
-$P(E_2|E) =\frac{P(E|E_2).P(E_2)}{P(E|E_1).P(E_1)+P(E|E_2).P(E_2)+P(E|E_3).P(E_3)+P(E|E_4).P(E_4)}\\\\
+        \tab\tab[0.4cm]= \frac{1}{15}\\\\\\
+\pr{E_2|E} =\frac{\pr{E|E_2}.\pr{E_2}}{\pr{E|E_1}.\pr{E_1}+\pr{E|E_2}.\pr{E_2}+\pr{E|E_3}.\pr{E_3}+\pr{E|E_4}.\pr{E_4}}\\\\
         \tab\tab[0.4cm]= \frac{\frac{6}{10}.\frac{1}{4}}{\frac{1}{10}.\frac{1}{4}+\frac{6}{10}.\frac{1}{4}+\frac{8}{10}.\frac{1}{4}+\frac{0}{10}.\frac{1}{4}}\\\\
         \tab\tab[0.4cm]= \frac{\frac{6}{40}}{\frac{15}{40}}\\\\
-        \tab\tab[0.4cm]= \frac{6}{15}\\\\
-        \tab\tab[0.4cm]=\frac{2}{5}$\\\\\\
-$P(E_3|E) =\frac{P(E|E_3).P(E_3)}{P(E|E_1).P(E_1)+P(E|E_2).P(E_2)+P(E|E_3).P(E_3)+P(E|E_4).P(E_4)}\\\\
+        \tab\tab[0.4cm]=\frac{2}{5}\\\\\\
+\pr{E_3|E} =\frac{\pr{E|E_3}.\pr{E_3}}{\pr{E|E_1}.\pr{E_1}+\pr{E|E_2}.\pr{E_2}+\pr{E|E_3}.\pr{E_3}+\pr{E|E_4}.\pr{E_4}}\\\\
         \tab\tab[0.4cm] = \frac{\frac{8}{10}.\frac{1}{4}}{\frac{1}{10}.\frac{1}{4}+\frac{6}{10}.\frac{1}{4}+\frac{8}{10}.\frac{1}{4}+\frac{0}{10}.\frac{1}{4}}\\\\
         \tab\tab[0.4cm]= \frac{\frac{8}{40}}{\frac{15}{40}}\\\\
-        \tab\tab[0.4cm]= \frac{8}{15}$\\\\
+        \tab\tab[0.4cm]= \frac{8}{15}\)
 \end{document}
 
 
