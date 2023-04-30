@@ -20,6 +20,8 @@
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
 \usepackage{multirow}
+\usepackage{caption}
+\usepackage{babel}
 %\usepackage{tabto}
 %
 %\usepackage{setspace}
@@ -79,11 +81,11 @@
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
-
+\renewcommand\thetable{1}
 \renewcommand\thesectiondis{\arabic{section}}
 \renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
 \renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
-
+\setcounter{table}{1}
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 \def\inputGnumericTable{}                                 %%
@@ -101,6 +103,7 @@
 %}
 
 \begin{document}
+
 %
 
 
@@ -299,23 +302,36 @@
 % creates the second title. It will be ignored for other modes.
 
 %\IEEEpeerreviewmaketitle
-
-\textbf{12.13.6.12 Question:} Suppose we have four boxes A,B,C and D containing coloured marbles as given in tables folder: 
+\textbf{12.13.6.12 Question:} Suppose we have four boxes A,B,C and D containing coloured marbles as given in table below:
+ 
+\begin{table}[htb]
+\centering
+\begin{tabular}{|l|l|l|l|}\hline
+\multicolumn{1}{|l|}{Box} & \multicolumn{3}{|l|}{Marble colour} \\\hline
+        &Red    &White  &Black\\\hline
+A       &1      &6      &3\\\hline
+B       &6      &2      &2\\\hline
+C       &8      &1      &1\\\hline
+D       &0      &6      &4\\\hline
+\end{tabular}\\
+\caption*{\label{Table:1}Table 1: Question Table}
+\end{table}
 One of the boxes has been selected at random and a single marble is drawn from it.$\,$If the marble is read,$\,$what is the probability that it was drawn from \\1) Box A ?\\2) Box B ?\\3) Box C ?\\\\
 \textbf{Answer:}\tab[0.4cm] \( 1)\frac{1}{15} \) \tab \( 2)\frac{2}{5}\) \tab \( 3)\frac{8}{15}\) 
 
 \solution
 \begin{table}[htbp]
+\centering
+\label{Table 2}
 \begin{tabular}{|l|l|}\hline
 Events	&Definition			\\\hline
-$E$	&drawn marble is red			\\
-$E_1$	&selected box is A			\\
-$E_2$	&selected box is B			\\
-$E_3$	&selected box is C			\\
+$E$	&drawn marble is red			\\\hline
+$E_1$	&selected box is A			\\\hline
+$E_2$	&selected box is B			\\\hline
+$E_3$	&selected box is C			\\\hline
 $E_4$	&selected box is D			\\\hline
 \end{tabular}\\
-\caption{Events Table}
-\label{Table 1:}
+\caption*{Table 2: Events Table}
 \end{table}
 
 Probability of chosen box being A given that drawn marble is red is given by: \(\pr{E_1\vert E}\) 
