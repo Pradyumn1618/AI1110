@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  5 MAY 2023 19:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  6 MAY 2023 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1203,6 +1203,17 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 3
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
+Underfull \hbox (badness 10000) in paragraph at lines 301--308
+[]\OT1/txr/bx/n/12 12.13.4.5 Ques-tion: \OT1/txr/m/n/12 Find the prob-a-bil-ity
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--308
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 315--317
 
  []
@@ -1226,17 +1237,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 365--368
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
 
  []
 
 
-Overfull \hbox (120.66788pt too wide) detected at line 377
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 374--376
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--385
+Underfull \hbox (badness 10000) in paragraph at lines 381--384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--400
 
  []
 
@@ -1247,9 +1263,9 @@ Package rerunfilecheck Info: File `Assignment_2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29077 strings out of 478287
- 573911 string characters out of 5849289
- 854086 words of memory out of 5000000
+ 29081 strings out of 478287
+ 573963 string characters out of 5849289
+ 854088 words of memory out of 5000000
  46641 multiletter control sequences out of 15000+600000
  527892 words of font info for 143 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1262,10 +1278,10 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment_2.pdf (2 pages, 55211 bytes).
+Output written on Assignment_2.pdf (2 pages, 55166 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 32 named destinations out of 1000 (max. 500000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 36 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
