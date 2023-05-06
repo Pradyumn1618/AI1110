@@ -303,11 +303,11 @@ where a success is defined as\\
 \brak{i} number greater than 4\\
 \brak{ii} six appears on at least one die\\
 \solution\\
-\brak{i}\\
 Let \(X\) be a random variable denoting the outcome of a die toss so,\\
 \begin{align}
 X=\cbrak{1,2,3,4,5,6}
 \end{align}
+\brak{i}\\
 Let the Cumulative Distribution function be:
 \begin{align}
 F_X\brak{i}&=\pr{X\le i}\\
@@ -315,7 +315,7 @@ F_X\brak{i}&=\pr{X\le i}\\
 \end{align}
 Now,\\
 \begin{align}
-\pr{X=i}&=\frac{1}{6}\,\,\forall 1\le i \le 6\\
+\pr{X=i}&=\frac{1}{6}\,\,\forall 1\le i \le 6 \label{eq:9}\\ 
 \therefore
 F_X\brak{i}&=\sum_{n=1}^{n=i}{\frac{1}{6}}\\
 \implies F_X\brak{i}&=i/6\label{eq:1}
@@ -363,34 +363,45 @@ p_Y\brak{i}=
 $$
 \newpage
 \brak{ii}\\
-Let \(Y\) be a random variable denoting the outcome of a die toss so,\\
+Let \(p'\) be the probability of getting 6 in a die toss.\\
+\(\therefore\)
 \begin{align}
-Y=\cbrak{1,2,3,4,5,6}
+p'&=\pr{X=6}\\
+\text{by \eqref{eq:9}}\\
+  &=\frac{1}{6}
+\end{align}
+Let \(Y\) be a random variable denoting the number 6's in die tosses,\\
+\begin{align}
+\therefore
+Y \sim Bin\brak{n,p'}\\
+\text{where n=2 and \(p'=\frac{1}{6}\)}
+\end{align}
+\begin{align}
+\therefore
+\pr{Y=i}&=\comb{2}{i} p'^i \brak{1-p'}^{\brak{2-i}}\\
+\implies \pr{Y=i}&=\comb{2}{i} \brak{\frac{1}{6}}^i \brak{\frac{5}{6}}^{\brak{2-i}} \label{eq:10}
 \end{align}
 Let the Cumulative Distribution function be:
 \begin{align}
 F_Y\brak{i}&=\pr{Y\le i}\\
-      &= \sum_{n=1}^{n=i}{\pr{Y=n}}
-\end{align}
-Now,\\
-\begin{align}
-\pr{Y=i}&=\frac{1}{6}\,\,\forall 1\le i \le 6\\ 
+      &= \sum_{n=0}^{n=i}{\pr{Y=n}}\\
 \therefore
-F_Y\brak{i}&=\sum_{n=1}^{n=i}{\frac{1}{6}}\\
-\implies F_Y\brak{i}&=i/6\label{eq:7}
+by \eqref{eq:10}\\
+F_Y\brak{0}&=\comb{2}{0} \brak{\frac{1}{6}}^0 \brak{\frac{5}{6}}^2\\
+\implies F_Y\brak{0}&=\frac{25}{36} \label{eq:11}\\
+F_Y\brak{2}&=1 \label{eq:12}\\
+\because Y \le 2
 \end{align}
-Let \(p\) denote the probability of success in this case.\\
-\(\therefore\) 1 - \(p\) is probability of failure i.e., getting no 6 in either of the tosses\\
 
+Let \(p\) denote the probability of success in this case.\\
 \begin{align}
-\therefore 1-p &= F_Y\brak{5}F_Y\brak{5}\\
-               \text{by \eqref{eq:7}}\\
-               &= \frac{5}{6}\times\frac{5}{6}\\
-               &= \frac{25}{36}\\
-\implies p&= 1- \frac{25}{36}\\
-\implies p&= \frac{11}{36} \label{eq:8}
+\therefore 
+p&=F_Y\brak{2}-F_Y\brak{0}\\
+\text{by \eqref{eq:11},\eqref{eq:12}}\\
+p&=1-\frac{25}{36}\\
+\implies p&=\frac{11}{36} \label{eq:8}
 \end{align}
-Let \(Z\) be a random variable denoting number of successes.
+Let \(Z\) be a random variable denoting number of successes.\\
 \begin{align}
 \therefore
 Z \sim Ber\brak{p}
