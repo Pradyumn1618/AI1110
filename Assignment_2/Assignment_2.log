@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  6 MAY 2023 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  7 MAY 2023 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1219,17 +1219,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 315--317
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--334
+Underfull \hbox (badness 10000) in paragraph at lines 329--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--355
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
 
  []
 
@@ -1237,37 +1242,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 372--374
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 387--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+Underfull \hbox (badness 10000) in paragraph at lines 392--395
 
  []
 
+[2
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--411
+] (./Assignment_2.aux)
 
- []
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-[2] (./Assignment_2.aux)
 Package rerunfilecheck Info: File `Assignment_2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29101 strings out of 478287
- 574211 string characters out of 5849289
- 854170 words of memory out of 5000000
- 46655 multiletter control sequences out of 15000+600000
+ 29085 strings out of 478287
+ 574030 string characters out of 5849289
+ 853058 words of memory out of 5000000
+ 46651 multiletter control sequences out of 15000+600000
  531544 words of font info for 154 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,13n,96p,504b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,13n,96p,504b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1276,10 +1281,10 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment_2.pdf (2 pages, 56771 bytes).
+Output written on Assignment_2.pdf (2 pages, 55514 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 42 named destinations out of 1000 (max. 500000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 30 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
