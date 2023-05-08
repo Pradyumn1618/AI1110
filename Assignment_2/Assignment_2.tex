@@ -18,6 +18,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
+%\usepackage{enumerate}
 %
 %\usepackage{setspace}
 %\usepackage{gensymb}
@@ -76,6 +77,7 @@
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\renewcommand{\theenumi}{\roman{enumi}}
 
 \renewcommand\thesectiondis{\arabic{section}}
 \renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
@@ -300,14 +302,17 @@ columns=fullflexible
 %\IEEEpeerreviewmaketitle
 \textbf{12.13.4.5 Question:} Find the probability distribution of the number of successes in two tosses of a die,
 where a success is defined as\\
-\brak{i} number greater than 4\\
-\brak{ii} six appears on at least one die\\
+\begin{enumerate}
+\item number greater than 4
+\item six appears on at least one die
+\end{enumerate}
 \solution\\
 Let \(X\) be a random variable denoting the outcome of a die toss so,\\
 \begin{align}
 X=\cbrak{1,2,3,4,5,6}
 \end{align}
-\brak{i}\\
+\begin{enumerate}
+\item
 Let the Cumulative Distribution function be:
 \begin{align}
 F_X\brak{i}&=\pr{X\le i}\\
@@ -351,7 +356,7 @@ p_Y\brak{k}=
 \end{cases}
 $$\\
 
-\brak{ii}\\
+\item 
 Let \(p'\) be the probability of getting 6 in a die toss.\\
 \(\therefore\)
 \begin{align}
@@ -387,11 +392,11 @@ p&=F_Y\brak{2}-F_Y\brak{0}\\
 \end{align}
 Let \(Z\) be a random variable denoting number of successes.\\
 \begin{align}
-\therefore
-Z \sim Ber\brak{p}
+&\therefore
+Z \sim Ber\brak{p}\\
+&\text{where } p=\frac{11}{36} \text{ by \eqref{eq:8}}\\
+&\therefore
 \end{align}
-where \(p\)=\(\frac{11}{36}\) by \eqref{eq:8}\\
-\(\therefore\)\\
 $$
 p_Z\brak{k}=
 \begin{cases}
@@ -400,6 +405,7 @@ p_Z\brak{k}=
 0, &\text{otherwise}
 \end{cases}
 $$
+\end{enumerate}
 \end{document}
 
 
