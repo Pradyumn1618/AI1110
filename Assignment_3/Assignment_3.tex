@@ -302,44 +302,55 @@ columns=fullflexible
 %\IEEEpeerreviewmaketitle
 \textbf{11.16.3.7 Question:} A fair coin is tossed four times, and a person win Rs 1 for each head and lose
 Rs 1.50 for each tail that turns up.
-From the sample space calculate how many different amounts of money you can
+Calculate how many different amounts of money you can
 have after four tosses and the probability of having each of these amounts.\\
 \solution\\
-\begin{table}[h]
-\centering
-\input{tables/Amount.tex}
-\caption{Amount Table}
-\label{tab:table1}
-\end{table}\\
 Let $X$ be a random variable denoting the number of heads obtained after four coin tosses.
 $$ 
-\therefore X=\cbrak{0,1,2,3,4}
+\therefore X\sim Bin\brak{n,p}
 $$
-The sample space $S$ of the experiment is given by: 
+where $n=4$ and $p=\frac{1}{2}$
 \begin{align}
- S=\{&HHHH,HHHT,HHTH,HTHH,\\&THHH,HHTT,HTHT.THHT,\\&HTTH,THTH,TTHH,HTTT,\\&THTT,TTHT,TTTH,TTTT\}
+\therefore
+\pr{X=i}&=\comb{4}{i}\brak{\frac{1}{2}}^4 \label{eq:1}
 \end{align}
-From the above sample space,\\
+Let $A$ be a random variable denoting the amount money a person can have.
 \begin{align}
-\pr{X=0}&=\frac{1}{16}\\
-\pr{X=1}&=\frac{1}{4}\\
-\pr{X=2}&=\frac{3}{8}\\
-\pr{X=3}&=\frac{1}{4}\\
-\pr{X=4}&=\frac{1}{16}
+\therefore \text{by question}\\ 
+A&=X-\brak{4-X}\times 1.5\\
+\implies A&=2.5\times X - 6 \label{eq:2} 
 \end{align}
-Let $A$ be a random variable denoting the amount money a person can have which can take five different values.
-$$
-\therefore A=\cbrak{-6.-3.5,-1,1.5,4}
-$$
-$\therefore$ by above table\\
+$\therefore A$ takes five different values.\\
+%$\implies$
+%\begin{table}[h]
+%\centering
+%\input{tables/Amount.tex}
+%\caption{Amount Table}
+%\label{tab:table1}
+%\end{table}
+
+By \eqref{eq:1},\eqref{eq:2}
+
 \begin{align}
-\pr{X=0}&=\pr{A=-6}&=\frac{1}{16}\\
-\pr{X=1}&=\pr{A=-3}&=\frac{1}{4}\\
-\pr{X=2}&=\pr{A=-1}&=\frac{3}{8}\\
-\pr{X=3}&=\pr{A=1.5}&=\frac{1}{4}\\
-\pr{X=4}&=\pr{A=4}&=\frac{1}{16}
+\pr{X=0}&=\pr{A=-6} &&=\frac{1}{16}\\
+\pr{X=1}&=\pr{A=-3} &&=\frac{1}{4}\\
+\pr{X=2}&=\pr{A=-1} &&=\frac{3}{8}\\
+\pr{X=3}&=\pr{A=1.5}&&=\frac{1}{4}\\
+\pr{X=4}&=\pr{A=4}  &&=\frac{1}{16}
 \end{align}
 
+$$
+\therefore\\
+p_A\brak{k}=
+\begin{cases}
+\frac{1}{16}, &k=-6\\
+\frac{1}{4}, &k=-3\\
+\frac{3}{8}. &k=-1\\
+\frac{1}{4}, &k=1.5\\
+\frac{1}{16}, &k=4\\
+0, &\text{otherwise}\\
+\end{cases}
+$$
 
 \end{document}
 
