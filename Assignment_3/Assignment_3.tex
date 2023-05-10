@@ -309,10 +309,10 @@ Let $X$ be a random variable denoting the number of heads obtained after four co
 $$ 
 \therefore X\sim Bin\brak{n,p}
 $$
-where $n=4$ and $p=\frac{1}{2}$
+where $p=\frac{1}{2}$
 \begin{align}
 \therefore
-\pr{X=i}&=\comb{4}{i}\brak{\frac{1}{2}}^4 \label{eq:1}
+\pr{X=i}&=\comb{n}{i}\brak{\frac{1}{2}}^n \label{eq:1}
 \end{align}
 Let $A$ be a random variable denoting the amount money a person can have.
 \begin{align}
@@ -320,7 +320,7 @@ Let $A$ be a random variable denoting the amount money a person can have.
 A&=X-\brak{4-X}\times 1.5\\
 \implies A&=2.5\times X - 6 \label{eq:2} 
 \end{align}
-$\therefore A$ takes five different values.\\
+$\therefore A$ takes $n+1$ different values.\\
 %$\implies$
 %\begin{table}[h]
 %\centering
@@ -330,7 +330,18 @@ $\therefore A$ takes five different values.\\
 %\end{table}
 
 By \eqref{eq:1},\eqref{eq:2}
-
+\begin{align}
+\pr{X=i}&=\pr{A=2.5i-6}=\comb{n}{i}\brak{\frac{1}{2}}^n \label{eq:3}
+\end{align}
+$$
+\therefore\\
+p_A\brak{2.5k-6}=
+\begin{cases}
+\comb{n}{k}\brak{\frac{1}{2}}^n,&\forall\,\,0\le k \le n+1\\
+0,&\text{otherwise}
+\end{cases}
+$$
+For $n=4$ by \eqref{eq:3}
 \begin{align}
 \pr{X=0}&=\pr{A=-6} &&=\frac{1}{16}\\
 \pr{X=1}&=\pr{A=-3} &&=\frac{1}{4}\\
