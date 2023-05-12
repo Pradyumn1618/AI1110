@@ -18,7 +18,14 @@
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
 \usepackage{caption}
-\usepackage{babel}
+\usepackage[latin1]{inputenc}                                 %%
+   \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}       
 %\usepackage{enumerate}
 %
 %\usepackage{setspace}
@@ -103,6 +110,7 @@ columns=fullflexible
 %}
 
 \begin{document}
+\def\inputGnumericTable{}
 %
 
 
@@ -260,7 +268,6 @@ columns=fullflexible
 
 % make the title area
 \maketitle
-\setcounter{table}{0}
 \newpage
 
 %\tableofcontents
