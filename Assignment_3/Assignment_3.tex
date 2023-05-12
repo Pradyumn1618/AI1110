@@ -333,15 +333,33 @@ By \eqref{eq:1},\eqref{eq:2}
 \begin{align}
 \pr{X=i}&=\pr{A=2.5i-1.5n}=\comb{n}{i}\brak{\frac{1}{2}}^n \label{eq:3}
 \end{align}
+Let $F_A(k)$ denote the cumulative distribution function of $A$:\\
+\begin{align}
+\therefore F_A(k) = \pr{A\le k} &= \sum_{i=0}^{i=\lfloor \frac{k+1.5n}{2.5} \rfloor}{\comb{n}{i}\brak{\frac{1}{2}}^n}
+\end{align}
+%$$
+%\therefore\\
+%p_A\brak{2.5k-1.5n}=
+%\begin{cases}
+%\comb{n}{k}\brak{\frac{1}{2}}^n,&\forall\,\,0\le k \le n\\
+%0,&\text{otherwise}
+%\end{cases}
+%$$
 $$
-\therefore\\
-p_A\brak{2.5k-1.5n}=
+p_A\brak{k}=
 \begin{cases}
-\comb{n}{k}\brak{\frac{1}{2}}^n,&\forall\,\,0\le k \le n+1\\
+\comb{n}{\frac{k+1.5n}{2.5}}\brak{\frac{1}{2}}^n,&\frac{k+1.5n}{2.5}\in I \text{ and }0\le \frac{k+1.5n}{2.5} \le n\\
 0,&\text{otherwise}
 \end{cases}
 $$
+
 $\therefore \text{ For } n=4$ 
+\begin{table}[htbp]
+\centering
+\input{tables/Amount.tex}
+\caption{Amount Table}
+\label{tab:table1}
+\end{table}
 $$
 p_A\brak{k}=
 \begin{cases}
