@@ -312,7 +312,12 @@ Rs 1.50 for each tail that turns up.
 Calculate how many different amounts of money you can
 have after four tosses and the probability of having each of these amounts.\\
 \solution\\
-Let $X$ be a random variable denoting the number of heads obtained after four coin tosses.
+\begin{table}[h]
+\centering
+\input{tables/RV.tex}
+\caption{Definitions}
+\label{tab:table1}
+\end{table}
 $$ 
 \therefore X\sim Bin\brak{n,p}
 $$
@@ -321,28 +326,33 @@ where $p=\frac{1}{2}$
 \therefore
 \pr{X=i}&=\comb{n}{i}\brak{\frac{1}{2}}^n \label{eq:1}
 \end{align}
-Let $A$ be a random variable denoting the amount money a person can have.
+
 \begin{align}
-\therefore \text{by question}\\ 
+\text{By question}\\ 
 A&=X-\brak{n-X}\times 1.5\\
 \implies A&=2.5 X - 1.5n \label{eq:2} 
 \end{align}
 $\therefore A$ takes $n+1$ different values.\\
 %$\implies$
-%\begin{table}[h]
-%\centering
-%\input{tables/Amount.tex}
-%\caption{Amount Table}
-%\label{tab:table1}
-%\end{table}
+
 
 By \eqref{eq:1},\eqref{eq:2}
 \begin{align}
 \pr{X=i}&=\pr{A=2.5i-1.5n}=\comb{n}{i}\brak{\frac{1}{2}}^n \label{eq:3}
 \end{align}
-Let $F_A(k)$ denote the cumulative distribution function of $A$:\\
+Let $F_X\brak{k}$ denote the cumulative distribution function of $X$:\\
 \begin{align}
-\therefore F_A(k) = \pr{A\le k} &= \sum_{i=0}^{i=\lfloor \frac{k+1.5n}{2.5} \rfloor}{\comb{n}{i}\brak{\frac{1}{2}}^n}
+\therefore F_X\brak{k} = \pr{X\le k} &= \sum_{i=0}^{i=k}{\comb{n}{i}\brak{\frac{1}{2}}^n} \label{eq:4}
+\end{align}
+Let $F_A\brak{k}$ denote the cumulative distribution function of $A$:\\
+\begin{align}
+F_A\brak{k} &= \pr{A\le k}\\
+                  &=\pr{2.5X-1.5n \le k}\\
+                  &=\pr{X \le \frac{k+1.5n}{2.5}} \\
+                  &=F_X\brak{\frac{k+1.5n}{2.5}}\\
+                  \therefore \text{by \eqref{eq:4}}\\
+                  &= \sum_{i=0}^{i=\lfloor \frac{k+1.5n}{2.5} \rfloor}{\comb{n}{i}\brak{\frac{1}{2}}^n}\\
+                  &\brak{\because X \text{ takes only integer values}} 
 \end{align}
 %$$
 %\therefore\\
@@ -353,6 +363,7 @@ Let $F_A(k)$ denote the cumulative distribution function of $A$:\\
 %\end{cases}
 %$$
 $$
+\therefore\\
 p_A\brak{k}=
 \begin{cases}
 \comb{n}{\frac{k+1.5n}{2.5}}\brak{\frac{1}{2}}^n,&\frac{k+1.5n}{2.5}\in I \text{ and }0\le \frac{k+1.5n}{2.5} \le n\\
@@ -360,13 +371,7 @@ p_A\brak{k}=
 \end{cases}
 $$
 
-$\therefore \text{ For } n=4$ 
-\begin{table}[htbp]
-\centering
-\input{tables/Amount.tex}
-\caption{Amount Table}
-\label{tab:table1}
-\end{table}
+$\therefore \text{ For } n=4$\\
 $$
 p_A\brak{k}=
 \begin{cases}
