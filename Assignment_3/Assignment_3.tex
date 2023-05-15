@@ -318,9 +318,9 @@ have after four tosses and the probability of having each of these amounts.\\
 \caption{Definitions}
 \label{tab:table1}
 \end{table}
-$$ 
+\begin{align} 
 \therefore X\sim Bin\brak{n,p}
-$$
+\end{align}
 where $p=\frac{1}{2}$
 \begin{align}
 \therefore
@@ -366,7 +366,7 @@ $$
 \therefore\\
 p_A\brak{k}=
 \begin{cases}
-\comb{n}{\frac{k+1.5n}{2.5}}\brak{\frac{1}{2}}^n,&\frac{k+1.5n}{2.5}\in I \text{ and }0\le \frac{k+1.5n}{2.5} \le n\\
+\comb{n}{\lfloor \frac{k+1.5n}{2.5} \rfloor}\brak{\frac{1}{2}}^n,&\lfloor \frac{k+1.5n}{2.5} \rfloor > \lfloor \frac{k+1.5n-1}{2.5} \rfloor\\
 0,&\text{otherwise}
 \end{cases}
 $$
