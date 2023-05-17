@@ -123,16 +123,16 @@
 \setlongtables
 
 \setlength\gnumericTableWidth{%
+	108pt+%
+	53pt+%
+	53pt+%
+	53pt+%
+	127pt+%
 	53pt+%
 	53pt+%
 	53pt+%
 	53pt+%
-	53pt+%
-	53pt+%
-	53pt+%
-	53pt+%
-	53pt+%
-	53pt+%
+	109pt+%
 0pt}
 \def\gumericNumCols{10}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
@@ -152,16 +152,16 @@
 %%                                                                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{108pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{127pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColF}}{\newlength{\gnumericColF}}{}\settowidth{\gnumericColF}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColG}}{\newlength{\gnumericColG}}{}\settowidth{\gnumericColG}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColH}}{\newlength{\gnumericColH}}{}\settowidth{\gnumericColH}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColI}}{\newlength{\gnumericColI}}{}\settowidth{\gnumericColI}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColJ}}{\newlength{\gnumericColJ}}{}\settowidth{\gnumericColJ}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColJ}}{\newlength{\gnumericColJ}}{}\settowidth{\gnumericColJ}{\begin{tabular}{@{}p{109pt*\gnumericScale}@{}}x\end{tabular}}
 
 \begin{tabular}[|c|c|c|c|c|c|c|c|c|c|]{%
 	b{\gnumericColA}%
@@ -262,30 +262,12 @@
 	 \multicolumn{2}{|p{	\gnumericColA+%
 	\gnumericColB+%
 	\tabcolsep*2*1}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{$A$}}
-	&\multicolumn{3}{p{	\gnumericColC+%
-	\gnumericColD+%
-	\gnumericColE+%
-	\tabcolsep*2*2}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\{-1.5$n$,2.5-1.5$n$,..$n$\}}}
-	&\multicolumn{5}{p{	\gnumericColF+%
-	\gnumericColG+%
-	\gnumericColH+%
-	\gnumericColI+%
-	\gnumericColJ+%
-	\tabcolsep*2*4}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{Total Amount a person can have}}
-\\
-\hhline{|----------|}
-	 \multicolumn{2}{|p{	\gnumericColA+%
-	\gnumericColB+%
-	\tabcolsep*2*1}|}%
 	{\gnumericPB{\raggedright}\gnumbox[l]{$X$}}
 	&\multicolumn{3}{p{	\gnumericColC+%
 	\gnumericColD+%
 	\gnumericColE+%
 	\tabcolsep*2*2}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\{$0,1,2,...n$\}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{0$\le X\le n$}}
 	&\multicolumn{5}{p{	\gnumericColF+%
 	\gnumericColG+%
 	\gnumericColH+%
@@ -293,6 +275,24 @@
 	\gnumericColJ+%
 	\tabcolsep*2*4}|}%
 	{\gnumericPB{\raggedright}\gnumbox[l]{Number of heads after n tosses}}
+\\
+\hhline{|----------|}
+	 \multicolumn{2}{|p{	\gnumericColA+%
+	\gnumericColB+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{$A$=2.5$X$-1.5$n$}}
+	&\multicolumn{3}{p{	\gnumericColC+%
+	\gnumericColD+%
+	\gnumericColE+%
+	\tabcolsep*2*2}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{\{-1.5$n$,2.5-1.5$n$,..,$n$\}}}
+	&\multicolumn{5}{p{	\gnumericColF+%
+	\gnumericColG+%
+	\gnumericColH+%
+	\gnumericColI+%
+	\gnumericColJ+%
+	\tabcolsep*2*4}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{total amount person can have}}
 \\
 \hhline{|--|---|-----|}
 \end{tabular}
