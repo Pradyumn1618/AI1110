@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  15 MAY 2023 11:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  17 MAY 2023 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1339,11 +1339,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 346--348
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
-
- []
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -1352,13 +1347,13 @@ Package rerunfilecheck Info: File `Assignment_3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30727 strings out of 478287
- 605782 string characters out of 5849289
- 887218 words of memory out of 5000000
+ 30729 strings out of 478287
+ 605808 string characters out of 5849289
+ 888218 words of memory out of 5000000
  48264 multiletter control sequences out of 15000+600000
  539380 words of font info for 171 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,13n,96p,504b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,16n,96p,504b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1367,10 +1362,10 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment_3.pdf (1 page, 54556 bytes).
+Output written on Assignment_3.pdf (1 page, 54668 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
