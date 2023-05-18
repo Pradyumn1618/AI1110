@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  17 MAY 2023 22:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  18 MAY 2023 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1339,18 +1339,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 346--348
 
  []
 
+<figs/A_pmf.png, id=17, 462.528pt x 320.1561pt>
+File: figs/A_pmf.png Graphic file (type png)
+<use figs/A_pmf.png>
+Package pdftex.def Info: figs/A_pmf.png  used on input line 376.
+(pdftex.def)             Requested size: 252.0pt x 174.4352pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] (./Assignment_3.aux)
+ <./figs/A_pmf.png>]
+(./Assignment_3.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Assignment_3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30729 strings out of 478287
- 605808 string characters out of 5849289
- 888218 words of memory out of 5000000
- 48264 multiletter control sequences out of 15000+600000
+ 30741 strings out of 478287
+ 605988 string characters out of 5849289
+ 884218 words of memory out of 5000000
+ 48273 multiletter control sequences out of 15000+600000
  539380 words of font info for 171 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,16n,96p,504b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1362,10 +1371,10 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment_3.pdf (1 page, 54668 bytes).
+Output written on Assignment_3.pdf (1 page, 62027 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  19 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
